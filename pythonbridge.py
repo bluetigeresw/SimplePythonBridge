@@ -22,7 +22,7 @@ class DiscordClient(discord.Client):
 
     async def on_message(self, message):
         if message.channel.id == discord_channel_id:
-            # Send the message to the Valheim server
+            # Send the message to the Game server
             reader, writer = await asyncio.open_connection(server_ip_address, server_port)
             writer.write(f"{message.author.name}: {message.content}".encode())
             writer.write_eof()
