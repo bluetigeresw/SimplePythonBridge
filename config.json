@@ -1,0 +1,7 @@
+{
+    "bot_token": "token",
+    "discord_channel_id": "channel_id",
+    "server_ip_address": "ip",
+    "server_port": "port"
+  }
+  
